@@ -1,0 +1,27 @@
+{
+  "name": "vibetube",
+  "version": "1.0.0",
+  "description": "a backend in vibetube",
+  "main": "index.js",
+  "type": "module",
+  
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "keywords": [ 
+    "javascript",
+    "backend"
+  ],
+  "author": "amit singh",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1"
+  }
+}
