@@ -8,6 +8,15 @@ import connectDB from "./db/index.js"
 }) 
 
 connectDB()
+.then(()=>{
+    app.listen(process.env.PORT||8000, ()=>{
+        console.log(`SERVER IS RUNNING AT PORT ${process.env.PORT||8000}`)
+    })
+})
+.catch((err)=>{
+    console.log("MANGO DB CONNECTION  FAILED!!!",err);
+})
+
  
 
 
