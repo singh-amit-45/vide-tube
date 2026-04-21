@@ -4,11 +4,10 @@
   "description": "a backend in vibetube",
   "main": "index.js",
   "type": "module",
-  
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
-  "keywords": [ 
+  "keywords": [
     "javascript",
     "backend"
   ],
@@ -20,7 +19,9 @@
     "prettier": "^3.8.1"
   },
   "dependencies": {
-    "dotenv": "^17.4.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
     "express": "^5.2.1",
     "mongoose": "^9.4.1"
   }
